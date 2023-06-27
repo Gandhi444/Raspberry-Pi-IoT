@@ -1,0 +1,46 @@
+<head>
+    <title> HTML / JavaScript examples </title>
+    <meta charset="utf-8">
+    <!-- <script type=" text/javascript " src="LED_execute.js"> </script> -->
+    <script type=" text/javascript " src="request.js"> </script>
+    <script type=" text/javascript " src="table.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="tex/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <style>
+        table,
+        table td {
+          border: 1px solid #cccccc;
+        }
+        td {
+          text-align: center;
+          vertical-align: middle;
+        }
+      </style>
+</head>
+
+<body onload="startJoy();">
+<p id=" paragraph "> </p>
+<table id="table" >
+    <tr id="headers">
+      <th>Pomiar</th>
+      <th>Wartość</th>
+      <th>Jednostka</th>
+    </tr>
+</table>
+<form >
+    <label>Temperatura:</label>
+    <input type="checkbox" id="t"  onclick=" tablechanged(this)" >
+    <label>Cisnienie:</label>
+    <input type="checkbox" id="p" onclick=" tablechanged(this)" >
+    <label>Wilgotnosc:</label>
+    <input type="checkbox" id="h" onclick=" tablechanged(this)" >
+    <label>Yaw:</label>
+    <input type="checkbox" id="yaw"  onclick=" tablechanged(this)" >
+    <label>Pitch:</label>
+    <input type="checkbox" id="pitch"  onclick=" tablechanged(this)" >
+    <label>Roll:</label>
+    <input type="checkbox" id="roll"  onclick=" tablechanged(this)" >
+  </form>
+<canvas id="scatter-chart" width="200pt" height="200pt"></canvas>
+</body>

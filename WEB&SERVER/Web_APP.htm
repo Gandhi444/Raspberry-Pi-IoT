@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<!-- HTML file head : web page metadata -->
+
+<head>
+    <title> HTML / JavaScript examples </title>
+    <meta charset="utf-8">
+    <!-- <script type=" text/javascript " src="LED_execute.js"> </script> -->
+    <script type=" text/javascript " src="request.js"> </script>
+    <script type=" text/javascript " src="graph.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="tex/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+</head>
+
+<style>
+    input[type="checkbox"] {
+        width: 30px;
+        height: 30px;
+    }
+    </style>
+
+<body onload="startTimer();">
+  <button id="Graph_nav" onclick=" ChangeFrame(this)"> Wykresy </button>
+  <button id="Pixels_nav" onclick=" ChangeFrame(this)"> Pixele </button>
+  <button id="Table_nav" onclick=" ChangeFrame(this)"> Tabela i Joystick </button>
+  <button id="Options_nav" onclick=" ChangeFrame(this)"> Opcje</button>
+  <br>
+  <iframe src="./graph.htm"  id="frame" name="frame" style="height:720px;width:61%;"></iframe>
+</body>
+
+</html>

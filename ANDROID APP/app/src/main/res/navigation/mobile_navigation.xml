@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_Table">
+
+    <fragment
+        android:id="@+id/nav_Table"
+        android:name="com.example.iot_project.ui.table.TableFragment"
+        android:label="@string/menu_Table"
+        tools:layout="@layout/fragment_table" />
+
+    <fragment
+        android:id="@+id/nav_Graphs"
+        android:name="com.example.iot_project.ui.graph.GraphsFragment"
+        android:label="@string/menu_Graphs"
+        tools:layout="@layout/fragment_graph" />
+
+    <fragment
+        android:id="@+id/nav_Pixels"
+        android:name="com.example.iot_project.ui.pixels.PixelsFragment"
+        android:label="@string/menu_Pixels"
+        tools:layout="@layout/fragment_pixels" />
+    <fragment
+        android:id="@+id/nav_Options"
+        android:name="com.example.iot_project.ui.options.OptionsFragment"
+        android:label="@string/menu_Options"
+        tools:layout="@layout/fragment_options" />
+</navigation>

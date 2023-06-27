@@ -1,0 +1,109 @@
+<head>
+  <title> HTML / JavaScript examples </title>
+  <meta charset="utf-8">
+  <script type=" text/javascript " src="request.js"> </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+
+<body>
+
+<p id=" paragraph "> </p>
+    <h1> LED 8 x 8 SELECT </h1>
+    <div id="led-grid">
+    <form action="submit.php" method="post">
+      <div id="led-row1">
+        <input type="button" id="led1" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led2" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led3" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led4" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led5" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led6" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led7" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led8" name="led[]" onclick="Pixel_on_click(this)">
+    
+      </div>
+      <div id="led-row2">
+        <input type="button" id="led9" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led10" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led11" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led12" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led13" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led14" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led15" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led16" name="led[]" onclick="Pixel_on_click(this)">
+      </div> 
+      <div id="led-row3">                                                           
+        <input type="button" id="led17" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led18" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led19" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led20" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led21" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led22" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led23" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led24" name="led[]" onclick="Pixel_on_click(this)">
+      </div> 
+      <div id="led-row4">                                                     
+        <input type="button" id="led25" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led26" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led27" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led28" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led29" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led30" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led31" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led32" name="led[]" onclick="Pixel_on_click(this)">
+      </div>   
+      <div id="led-row5">                                                            
+        <input type="button" id="led33" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led34" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led35" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led36" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led37" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led38" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led39" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led40" name="led[]" onclick="Pixel_on_click(this)">
+      </div>
+      <div id="led-row6">
+        <input type="button" id="led41" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led42" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led43" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led44" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led45" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led46" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led47" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led48" name="led[]" onclick="Pixel_on_click(this)">
+      </div>
+      <div id="led-row7">
+        <input type="button" id="led49" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led50" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led51" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led52" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led53" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led54" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led55" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led56" name="led[]" onclick="Pixel_on_click(this)">
+      </div>
+      <div id="led-row8">
+        <input type="button" id="led57" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led58" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led59" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led60" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led61" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led62" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led63" name="led[]" onclick="Pixel_on_click(this)">
+        <input type="button" id="led64" name="led[]" onclick="Pixel_on_click(this)">
+      </div>
+    
+      <form>
+        <label>Red:</label>
+        <input type="number" id="red-value" maxlength="3" size="3">
+        <br>
+        <label>Green:</label>
+        <input type="number" id="green-value" maxlength="3" size="3">
+        <br>
+        <label>Blue:</label>
+        <input type="number" id="blue-value" maxlength="3" size="3">
+        <br><br>
+      </form>
+      <button id="myButton1" onclick=" SetPixel ()"> SEND </button>
+</body>

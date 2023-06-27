@@ -1,0 +1,29 @@
+<head>
+    <title> HTML / JavaScript examples </title>
+    <meta charset="utf-8">
+    <!-- <script type=" text/javascript " src="LED_execute.js"> </script> -->
+    <script type=" text/javascript " src="request.js"> </script>
+    <script type=" text/javascript " src="graph.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="tex/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+</head>
+
+<body onload="startGraph();">
+<p id=" paragraph "> </p>
+    <canvas id="line-chart" width="80" height="45"></canvas>
+      <form style="text-align: center">
+        <label>Temperatura:</label>
+        <input type="radio" id="t" name="Graph" onclick=" GraphChanged(this)" checked>
+        <label>Cisnienie:</label>
+        <input type="radio" id="p" name="Graph" onclick=" GraphChanged(this)" >
+        <label>Wilgotnosc:</label>
+        <input type="radio" id="h" name="Graph" onclick=" GraphChanged(this)" >
+        <label>Yaw:</label>
+        <input type="radio" id="yaw" name="Graph" onclick=" GraphChanged(this)" >
+        <label>Pitch:</label>
+        <input type="radio" id="pitch" name="Graph" onclick=" GraphChanged(this)" >
+        <label>Roll:</label>
+        <input type="radio" id="roll" name="Graph" onclick=" GraphChanged(this)" >
+      </form>
+</body>
